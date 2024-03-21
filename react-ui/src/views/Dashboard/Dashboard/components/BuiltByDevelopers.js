@@ -37,7 +37,7 @@ const BuiltByDevelopers = ({ title, name, description, image }) => {
             </Text>
             <Spacer />
             <Flex align='center'>
-              <Button
+              {/* <Button
                 p='0px'
                 variant='no-hover'
                 bg='transparent'
@@ -63,16 +63,16 @@ const BuiltByDevelopers = ({ title, name, description, image }) => {
                   pt='4px'
                   _hover={{ transform: "translateX(20%)" }}
                 />
-              </Button>
+              </Button> */}
             </Flex>
           </Flex>
           <Spacer />
           <Flex
-            bg='teal.300'
+            bg='orange.300'
             align='center'
             justify='center'
             borderRadius='15px'
-            width={{ lg: "40%" }}
+            width={{ lg: "25%" }}
             minHeight={{ sm: "250px" }}>
             {image}
           </Flex>
