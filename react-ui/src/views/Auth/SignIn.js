@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
-import signInImage from "assets/img/signInImage.png";
+import signInImage from "assets/img/signInImage_New.jpg";
 
 import AuthApi from "../../api/auth";
 import { useAuth } from "../../auth-context/auth.context";
@@ -30,7 +30,7 @@ function SignIn() {
   const history = useHistory();
   const { user, setUser } = useAuth();
   // Chakra color mode
-  const titleColor = useColorModeValue("teal.300", "teal.200");
+  const titleColor = useColorModeValue("orange.300", "orange.200");
   const textColor = useColorModeValue("gray.400", "white");
 
   const handleChange = e => {
@@ -144,7 +144,7 @@ function SignIn() {
                 value={formData?.password}
               />
               <FormControl display='flex' alignItems='center'>
-                <Switch id='remember-login' colorScheme='teal' me='10px' />
+                <Switch id='remember-login' colorScheme='orange' me='10px' />
                 <FormLabel
                   htmlFor='remember-login'
                   mb='0'
@@ -167,17 +167,17 @@ function SignIn() {
                 onClick={handleSubmit}
                 fontSize='10px'
                 type='submit'
-                bg='teal.300'
+                bg='orange.300'
                 w='100%'
                 h='45'
                 mb='20px'
                 color='white'
                 mt='20px'
                 _hover={{
-                  bg: "teal.200",
+                  bg: "orange.200",
                 }}
                 _active={{
-                  bg: "teal.400",
+                  bg: "orange.400",
                 }}>
                 SIGN IN
               </Button>

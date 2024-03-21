@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 // Assets
-import BgSignUp from "assets/img/BgSignUp.png";
+import BgSignUp from "assets/img/BgSignUp_New.jpg";
 import React, { useState } from "react";
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
 
@@ -29,10 +29,10 @@ function SignUp() {
   const history = useHistory();
   const { user } = useAuth();
 
-  const titleColor = useColorModeValue("teal.300", "teal.200");
+  const titleColor = useColorModeValue("orange.300", "orange.200");
   const textColor = useColorModeValue("gray.700", "white");
   const bgColor = useColorModeValue("white", "gray.700");
-  const bgIcons = useColorModeValue("teal.200", "rgba(255, 255, 255, 0.5)");
+  const bgIcons = useColorModeValue("orange.200", "rgba(255, 255, 255, 0.5)");
 
   const handleChange = e => {
     setFormData({
@@ -179,7 +179,7 @@ function SignUp() {
               onChange={handleChange}
             />
             <FormControl display='flex' alignItems='center' mb='24px'>
-              <Switch id='remember-login' colorScheme='teal' me='10px' />
+              <Switch id='remember-login' colorScheme='orange' me='10px' />
               <FormLabel htmlFor='remember-login' mb='0' fontWeight='normal'>
                 Remember me
               </FormLabel>
@@ -197,7 +197,7 @@ function SignUp() {
             <Button
               onClick={handleSubmit}
               type='submit'
-              bg='teal.300'
+              bg='orange.300'
               fontSize='10px'
               color='white'
               fontWeight='bold'
@@ -205,10 +205,10 @@ function SignUp() {
               h='45'
               mb='24px'
               _hover={{
-                bg: "teal.200",
+                bg: "orange.200",
               }}
               _active={{
-                bg: "teal.400",
+                bg: "orange.400",
               }}>
               SIGN UP
             </Button>
