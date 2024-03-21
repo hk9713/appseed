@@ -54,10 +54,10 @@ export default function Configurator(props) {
           <DrawerHeader pt="24px" px="24px">
             <DrawerCloseButton />
             <Text fontSize="xl" fontWeight="bold" mt="16px">
-              Purity UI Configurator
+              Portal UI Configurator
             </Text>
             <Text fontSize="md" mb="16px">
-              See your dashboard options.
+              Change the settings as you want.
             </Text>
             <Separator />
           </DrawerHeader>
@@ -65,19 +65,19 @@ export default function Configurator(props) {
             <Flex flexDirection="column">
               <Box>
                 <Text fontSize="md" fontWeight="600">
-                  Sidenav Type
+                  SideBar Type
                 </Text>
                 <Text fontSize="sm" mb="16px">
-                  Choose between 2 different sidenav types.
+                  Choose between 2 different sidebar types.
                 </Text>
                 <Flex>
                   <Button
                     w="50%"
                     p="8px 32px"
                     me="8px"
-                    colorScheme="teal"
-                    borderColor="teal.300"
-                    color="teal.300"
+                    colorScheme="orange"
+                    borderColor="orange.300"
+                    color="orange.300"
                     variant="outline"
                     fontSize="xs"
                     onClick={props.onTransparent}
@@ -86,11 +86,11 @@ export default function Configurator(props) {
                   </Button>
                   <Button
                     type="submit"
-                    bg="teal.300"
+                    bg="orange.300"
                     w="50%"
                     p="8px 32px"
                     mb={5}
-                    _hover="teal.300"
+                    _hover="orange.300"
                     color="white"
                     fontSize="xs"
                     onClick={props.onOpaque}
@@ -108,7 +108,7 @@ export default function Configurator(props) {
                   Navbar Fixed
                 </Text>
                 <Switch
-                  colorScheme="teal"
+                  colorScheme="orange"
                   isChecked={switched}
                   onChange={(event) => {
                     if (switched === true) {
@@ -135,7 +135,7 @@ export default function Configurator(props) {
               </Flex>
 
               <Separator />
-              <Box mt="24px">
+              {/* <Box mt="24px">
                 <Text fontSize="md" fontWeight="600">
                   Sidenav Type
                 </Text>
@@ -221,7 +221,7 @@ export default function Configurator(props) {
                     </Link>
                   </Flex>
                 </Box>
-              </Box>
+              </Box> */}
             </Flex>
           </DrawerBody>
         </DrawerContent>
