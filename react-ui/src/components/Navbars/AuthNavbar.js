@@ -81,7 +81,7 @@ export default function AuthNavbar(props) {
     >
       <CreativeTimLogo w="32px" h="32px" me="10px" />
       <Text fontSize="sm" mt="3px">
-        {logoText}
+        {'ARTEMIS DASHBOARD'}
       </Text>
     </Link>
   );
@@ -184,7 +184,7 @@ export default function AuthNavbar(props) {
           />
         </Box>
         {linksAuth}
-        <Link target="_blank" href="https://appseed.us/product/purity-dashboard/api-server-nodejs/react/">
+        {/* <Link target="_blank" href="https://appseed.us/product/purity-dashboard/api-server-nodejs/react/">
           <Button
             bg={bgButton}
             color={colorButton}
@@ -199,7 +199,7 @@ export default function AuthNavbar(props) {
           >
             Free Download
           </Button>
-        </Link>
+        </Link> */}
       </Flex>
     </Flex>
   );
