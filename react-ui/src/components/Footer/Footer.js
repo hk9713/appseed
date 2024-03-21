@@ -28,20 +28,21 @@ export default function Footer(props) {
         mb={{ base: "20px", xl: "0px" }}
       >
         &copy;
+        2024
         <Link
           // color={linkTeal}
-          color="teal.400"
-          href="https://www.creative-tim.com?AFFILIATE=128200"
+          color="orange.400"
+          href="https://www.akis.co.kr/"
           target="_blank"
         >
           {document.documentElement.dir === "rtl"
             ? " توقيت الإبداعية"
-            : "Creative Tim "}
+            : " AK 아이에스"}
         </Link>
-        &
-        <Link
+        {/* & 
+          <Link
           // color={linkTeal}
-          color="teal.400"
+          color="orange.400"
           href="https://www.simmmple.com"
           target="_blank"
         >
@@ -49,22 +50,22 @@ export default function Footer(props) {
         </Link>
         {document.documentElement.dir === "rtl"
           ? "للحصول على ويب أفضل"
-          : " for a better web"}
+          : " for a better web"} */}
       </Text>
       <List display="flex">
-        <ListItem
+        {/* <ListItem
           me={{
             base: "20px",
             md: "44px",
           }}
         >
-          <Link color="gray.400" href="https://www.creative-tim.com?AFFILIATE=128200">
+          <Link color="gray.400" href="https://github.com/hyundai-capital-rpa">
             {document.documentElement.dir === "rtl"
               ? "توقيت الإبداعية"
-              : "Creative Tim"}
+              : "RPA Git hub"}
           </Link>
-        </ListItem>
-        <ListItem
+        </ListItem> */}
+        {/* <ListItem
           me={{
             base: "20px",
             md: "44px",
@@ -96,7 +97,7 @@ export default function Footer(props) {
           >
             {document.documentElement.dir === "rtl" ? "رخصة" : "License"}
           </Link>
-        </ListItem>
+        </ListItem> */}
       </List>
     </Flex>
   );
